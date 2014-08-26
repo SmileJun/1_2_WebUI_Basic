@@ -12,25 +12,24 @@ a {
   text-decoration: none; }
   a:visited {
     color: #333; }
+  a:hover {
+    border: 1px solid blue; }
+
+button:hover {
+  border: 1px solid blue; }
 
 header {
-  bottom: 0;
   display: -webkit-flex;
   display: flex;
   height: 60px;
-  left: 0;
   min-width: 750px;
-  position: relative;
-  right: 0;
-  width: 100%; }
+  position: relative; }
 
 .logo-div {
-  display: inline-block;
   flex: initial;
   webkit-flex: initial;
   max-width: 244px;
-  min-width: 244px;
-  position: relative; }
+  min-width: 244px; }
   .logo-div img {
     height: 39px;
     padding: 10px 30px 10px 30px;
@@ -39,8 +38,8 @@ header {
 .search-div {
   display: -webkit-flex;
   display: flex;
-  flex: 6;
-  webkit-flex: 6;
+  flex: 3;
+  webkit-flex: 3;
   height: 60px;
   min-width: 200px;
   position: relative;
@@ -79,28 +78,67 @@ header {
 .account-div {
   align-items: center;
   display: flex;
-  flex: 5;
-  webkit-flex: 5;
+  flex: 2;
+  webkit-flex: 2;
   height: 60px;
   min-width: 270px;
-  padding-left: 30px;
+  padding: 0 30px 0 30px;
   position: relative;
   width: 371px; }
   .account-div .to-googlePlus {
     font-size: 15px;
     height: 24px;
     padding-right: 15px;
-    position: relative;
-    vertical-align: middle;
     width: 60px; }
-    .account-div .to-googlePlus a {
-      left: 8px;
-      position: absolute;
-      top: 4px; }
   .account-div .tab-menu {
     height: 30px;
     min-width: 195px;
-    padding-right: 30px;
-    position: relative;
     vertical-align: middle;
     overflow: hidden; }
+    .account-div .tab-menu div:hover {
+      border: 1px solid blue; }
+    .account-div .tab-menu .tab-menu-choice {
+      display: inline-block; }
+    .account-div .tab-menu .tab-menu-app {
+      background-image: url("//ssl.gstatic.com/gb/images/v1_2e543709.png");
+      background-size: 112px 1828px;
+      display: inline-block;
+      background-position: -51px -452px;
+      opacity: .55;
+      height: 30px;
+      width: 30px; }
+    .account-div .tab-menu .tab-menu-notice {
+      background-image: url("//ssl.gstatic.com/gb/images/v1_2e543709.png");
+      background-position: 5px -69px;
+      background-size: 112px 1828px;
+      display: inline-block;
+      height: 30px;
+      opacity: 0.55;
+      padding-left: 15px;
+      width: 30px; }
+    .account-div .tab-menu .tab-menu-stream {
+      background: rgba(0, 0, 0, 0.04);
+      box-sizing: border-box;
+      display: inline-block;
+      height: 30px;
+      padding-left: 15px;
+      width: 60px;
+      position: relative; }
+      .account-div .tab-menu .tab-menu-stream span {
+        line-height: 30px;
+        padding-left: 4px;
+        position: absolute; }
+    .account-div .tab-menu .tab-menu-me {
+      display: inline-block;
+      height: 30px;
+      padding-left: 15px;
+      position: relative;
+      width: 30px; }
+      .account-div .tab-menu .tab-menu-me .icon {
+        background-image: url(//lh4.googleusercontent.com/--vpjwM_O7vs/AAAAAAAAAAI/AAAAAAAAAAA/C58D7pBOf68/s32-c/photo.jpg);
+        background-size: 30px 30px;
+        border-radius: 50%;
+        border-radius: 15px;
+        height: 30px;
+        position: absolute;
+        width: 30px; }

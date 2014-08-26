@@ -5,65 +5,102 @@ main {
     float: left;
     height: 240px;
     position: absolute;
-    width: 200px; }
-    main nav span {
+    width: 200px;
+    z-index: 999; }
+    main nav .showAllNav {
+      background-color: #fff;
       display: inline-block;
       float: left;
       height: 240px;
-      width: 24px; }
-      main nav span .showAllArrow {
+      position: absolute;
+      width: 24px;
+      z-index: -1; }
+      main nav .showAllNav .showAllArrow {
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAbklEQVQ4y2P4//8/Ay0xw6gFg98CbKCjo8MAiA8AcQHVLYAa/gGI/4MsoaoFaIaDaAOqWYBmOAgHgMSpYgEWwxNgFlNsAT7DqWXBBVyGDxkLaBtENI9kPMk0gaoW0Dyj0aWowFLYNYzWB6MWMAAAq1H3+Mhu2hQAAAAASUVORK5CYII=);
         display: block;
         height: 24px;
         position: absolute;
         top: 132px;
         width: 24px; }
-    main nav ul {
-      display: block; }
-      main nav ul .nav-list-books {
-        background-color: #1aa1e1;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA40lEQVQoz+2RTRGDMBhEIyESKgEJSEACEioBB5GABCQgIRKQgITXQzc0QNIwbbl02Jlw+H72JYsBjDHGAB0w64zAADSmIKDW7Bjtd+o9P8AEtMBNg7GmsLAxbtSLNcjjLtACCPK6UaOBWCNgZd5verN2ankE7QBBTjcZEpAuc2uX8MkCQjS1nusTfa9Y60RUhwDxa2zmB7vC7iEAMivWLsAFuAD/DnAnANwC0HADzD8AzECr/gugQgX4LwAeqCK/NUBFC/QfAHrAbrz2gKjZhsgKgCWShEceEEf2BrCKJAs48zwAsmsx4ZbVwpEAAAAASUVORK5CYII=);
-        top: 0px; }
-      main nav ul .nav-list-apps {
-        background-color: #b3c833;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAr0lEQVQY0+2PYQ3DIBBGkVAJlYCUSkDCJOCgEpAwCZWAhEqohLcfowu9QQcp/FjSl0DC5b57hwJUDDABk6oglwHCdSwuvNGFw3XoX0oFJhfICPaFTJFAhCzwBFaOrKFu93dGnhU46rBFAmAAPPVsgDkVXBge484Es2h+AO7XwNAXY74EwJgI60SYxBJa1DZgkIKZtlgp8I0FXgqa010AjB9BL7r+4Bbcgj8UdDvdBS8+PbrMznUDvAAAAABJRU5ErkJggg==);
-        top: 48px; }
-      main nav ul .nav-list-movies {
-        background-color: #ce5043;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAM0lEQVRIx2P4//8/Ay0xw7CxgFaAzhYwQAH5pmHoHw2i0SAaDaLRIBoNIqpaMFonD5wFAKxu3oQT6lyzAAAAAElFTkSuQmCC);
-        top: 96px; }
-      main nav ul .nav-list-devices {
-        background-color: #658092;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAZUlEQVQ4y2P4//8/AxSv/08ZaGBAAjBzGZAsoBgQZQEDGYBkC0h19agFw8+C+UAsQETKItsCAyI89p5sC2DyROSLUQtGLRi1YHhbQERBRr4FBMB+XBYgl7C4LDhPZCmpAKWJKk0BogfJDVVYdRUAAAAASUVORK5CYII=);
-        top: 144px; }
-      main nav ul .nav-list-store {
-        background-color: #444;
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAvElEQVQoz93SUQ2EMAyAYSQgAQknAQknAQlImAMkTMJJqAQkTMIk/PeyCwvJtXR3e6HJEsLafjR0AIaexwxgBRJHZCAAo1FnA0AsTVOBlurdriEmUJoBROVu+wVIgFyYbnIDwKMULwowaTkW8NS+rsoDCCoAjPSJY4JbAFlJFOP+EiBK4lw2Jjqaiws4ra90AypoBpIH2DxABe1fal5nIPx5gtAEOP6BD2jYIhcgQMYXLqAl7gR8Hnqd7sAb5jBrMWbAKXcAAAAASUVORK5CYII=);
-        top: 192px; }
-      main nav ul li {
-        background-repeat: no-repeat;
-        display: inline-block;
+    main nav .nav-on-action-bar {
+      background-color: #1aa1e1; }
+      main nav .nav-on-action-bar .link {
+        display: block;
         height: 48px;
-        left: 0px;
-        position: absolute;
+        position: relative;
         width: 200px; }
-        main nav ul li a {
-          display: block;
+        main nav .nav-on-action-bar .link .icon-container {
+          display: inline-block;
           height: 48px;
-          width: 200px; }
+          width: 65px; }
+          main nav .nav-on-action-bar .link .icon-container .icon {
+            background-color: #1aa1e1;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA40lEQVQoz+2RTRGDMBhEIyESKgEJSEACEioBB5GABCQgIRKQgITXQzc0QNIwbbl02Jlw+H72JYsBjDHGAB0w64zAADSmIKDW7Bjtd+o9P8AEtMBNg7GmsLAxbtSLNcjjLtACCPK6UaOBWCNgZd5verN2ankE7QBBTjcZEpAuc2uX8MkCQjS1nusTfa9Y60RUhwDxa2zmB7vC7iEAMivWLsAFuAD/DnAnANwC0HADzD8AzECr/gugQgX4LwAeqCK/NUBFC/QfAHrAbrz2gKjZhsgKgCWShEceEEf2BrCKJAs48zwAsmsx4ZbVwpEAAAAASUVORK5CYII=);
+            display: inline-block;
+            height: 24px;
+            margin: 12px 0 0 28px;
+            width: 24px; }
+        main nav .nav-on-action-bar .link .title {
+          color: #fff;
+          display: inline-block;
+          font-size: 18px;
+          left: 70px;
+          line-height: 20px;
+          position: absolute;
+          top: 14px;
+          vertical-align: middle;
+          width: 127px; }
+    main nav .subNav {
+      display: block;
+      font-size: 18px;
+      left: 24px;
+      padding: 6px 0;
+      position: absolute;
+      width: 176px; }
+      main nav .subNav .subNav-option {
+        display: block;
+        height: 36px;
+        width: 176px; }
+        main nav .subNav .subNav-option .link {
+          box-sizing: border-box;
+          display: inline-block;
+          height: 36px;
+          line-height: 20px;
+          padding: 8px 12px 8px 23px;
+          width: 176px; }
+          main nav .subNav .subNav-option .link:hover {
+            border: 1px solid blue; }
+        main nav .subNav .subNav-option .chosen {
+          color: #1aa1e1; }
   main .action-bar {
+    background: #fff;
+    font-size: 14px;
     height: 48px;
+    min-width: 964px;
     position: relative;
     width: 100%; }
     main .action-bar div {
-      display: block;
+      box-sizing: border-box;
+      display: inline-block;
       float: left;
       height: 48px;
       line-height: 48px;
       text-align: middle; }
-    main .action-bar .sort-button {
-      margin-left: 238px;
-      width: 80px; }
+    main .action-bar .genre-button {
+      margin-left: 238px; }
+      main .action-bar .genre-button button {
+        background-color: #fff;
+        padding: 0 14px;
+        width: 80px; }
+      main .action-bar .genre-button .button-icon {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAjUlEQVQoz2P4//8/A7mYYYhrzs3N5SsqKsoE0jLYFGZmZgoWFhZmAYEEhmagxsri4uL/QPwYaIAyssbs7GxhoPwFkDyQnoOhGWiqLlDyA7oBaBp/AdW5YfVzfn6+ObIBeXl5xsgagXQA3gBDM+AnLo04QxtqwHeoAX+xacQbVUC/RQA1vQQF5HBNYeRgAKO6bfkUgtZHAAAAAElFTkSuQmCC);
+        background-position-y: center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 15px;
+        margin: 17px 3px 1px 3px;
+        vertical-align: top;
+        width: 15px; }
     main .action-bar .spacer {
       width: 11px; }
       main .action-bar .spacer .space-liner {
@@ -72,17 +109,68 @@ main {
         margin: 9px 5px 9px 5px;
         width: 1px; }
     main .action-bar .home {
+      padding: 0 14px;
       width: 42px; }
     main .action-bar .favor-chart {
+      padding: 0 14px;
       width: 87px; }
     main .action-bar .new-book {
+      padding: 0 14px;
       width: 56px; }
-    main .action-bar .helps {
+    main .action-bar .options {
+      display: block;
+      overflow: hidden;
       position: absolute;
-      right: 100px; }
-    main .action-bar .settings {
-      position: absolute;
-      right: 40px; }
+      right: 40px;
+      width: 375px; }
+      main .action-bar .options .helps {
+        display: inline-block;
+        margin-left: 238px;
+        width: 50px; }
+        main .action-bar .options .helps button {
+          background-color: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.17);
+          box-sizing: border-box;
+          color: #737373;
+          display: inline-block;
+          height: 30px;
+          line-height: 28px;
+          position: absolute;
+          top: 10px;
+          width: 38px; }
+          main .action-bar .options .helps button .icon {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAwUlEQVQ4y9WU6w3DIAyEGcEjZIQOwBAdgdEyikfoAAyRDVwTgZQQPyDKj/akkyIEn2zOIRBReNrh/6GsxEY2dS5raQrKWtgfAda77FlcKOvF3gaAzZsE7qGnCgGAEJGayndZ6ytWofUOTweOwCNYqDhp0EsoTTHG3U1SeBrUvD8HShdoTVwFDrQvQmEEqgQlQ732rbY9KE7M53BQSTuUc95tQNWRgptQc/jfN9q2f1PWOgn0H5Qa1Forhkefvp99+b/H6ZOyGDEoawAAAABJRU5ErkJggg==);
+            background-size: contain;
+            display: inline-block;
+            height: 21px;
+            margin: 3px 3px 1px 3px;
+            width: 21px; }
+          main .action-bar .options .helps button:hover {
+            border: 1px solid blue; }
+      main .action-bar .options .settings {
+        display: inline-block;
+        margin: 0 10px;
+        width: 55px; }
+        main .action-bar .options .settings button {
+          background-color: #fff;
+          border: 1px solid rgba(0, 0, 0, 0.17);
+          box-sizing: border-box;
+          color: #737373;
+          display: inline-block;
+          height: 30px;
+          line-height: 28px;
+          position: absolute;
+          top: 10px;
+          width: 55px; }
+          main .action-bar .options .settings button .icon {
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAA3klEQVQ4y2NgGE4gEYj/I+FEahg6D83QuaQawATEqkDMCOVbA/FdNEPvALEVVJ4Rqp4Jn6HZUI3XgHgNEP9DMxCG/0Hlr0H52bgMFALiN3gMeYLHkjdQ/RigDovi30DcgaRBGIg7gfgPFrV12AzVhYYXssI2HL7qwBLOuriCgA+IPyF5WQCHOl4g/gFV9xGqDy/4BVX8jIC6B1B1PwkZSHWX0iRM6/HEPi+SC3HFfi2udPoWRzr8As1ZX/CkU0FcQZBDYo66DuVn0T3vYwNz0AydTY2iLxXN0NThU1UAAJ7AjlNiNxjgAAAAAElFTkSuQmCC);
+            background-size: contain;
+            display: inline-block;
+            height: 21px;
+            margin-top: 4px;
+            width: 21px; }
+          main .action-bar .options .settings button:hover {
+            border: 1px solid blue; }
   main section {
     float: right;
     margin-top: 25px;
@@ -120,6 +208,8 @@ main {
       right: 5px;
       text-align: middle;
       vertical-align: middle; }
+      #categories .category-head .show-more-button:hover {
+        border: 1px solid blue; }
     #categories .category-head .subtitle {
       color: #555;
       display: block;

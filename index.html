@@ -13,7 +13,7 @@
   <header>
     <div class="logo-div">
       <img src="https://www.gstatic.com/android/market_images/web/play_logo.png" alt="GooglePlay-logo">
-    </div>   
+    </div>
 
     <div class="search-div">
       <div class="search-input">
@@ -34,11 +34,16 @@
         <a href="https://www.google.com">+명준</a>
       </div>
 
-      <div class="tap-menu">
+      <div class="tab-menu">
+        <div class="tab-menu-choice"></div>
         <div class="tab-menu-app"></div>
         <div class="tab-menu-notice"></div>
-        <div class="tab-menu-stream"></div>
-        <div class="tab-menu-me"></div>
+        <div class="tab-menu-stream">
+          <span>공유</span>
+        </div>
+        <div class="tab-menu-me">
+          <div class="icon"></div>
+        </div>
       </div>
     </div>
   </header>
@@ -48,53 +53,38 @@
       <span class="showAllNav">
         <span class="showAllArrow"></span>
       </span>
-      <ul id="nav-list">
-        <li class="nav-list-books">
-          <a href="https://play.google.com">
-            <span class="icon-container">
-              <span class="icon"></span>
-            </span>
-          </a>
-          <ul></ul>
+
+
+      <div class="nav-on-action-bar">
+        <a class="link" href="https://play.google.com">
+          <span class="icon-container">
+            <span class="icon"></span>
+          </span>
+          
+          <span class="title">도서</span>
+          </span>
+        </a>
+      </div>
+
+      <ul class="subNav">
+        <li class="subNav-option">
+          <a href="" class="link">내 책</a>
         </li>
-        <li class="nav-list-apps">
-          <a href="https://play.google.com">
-            <span class="icon-container">
-              <span class="icon"></span>
-            </span>
-          </a>
-          <ul></ul>
-        </li>
-        <li class="nav-list-movies">
-          <a href="https://play.google.com">
-            <span class="icon-container">
-              <span class="icon"></span>
-            </span>
-          </a>
-          <ul></ul>
-        </li>
-        <li class="nav-list-devices">
-          <a href="https://play.google.com">
-            <span class="icon-container">
-              <span class="icon"></span>
-            </span>
-          </a>
-          <ul></ul>
-        </li>
-        <li class="nav-list-store">
-          <a href="https://play.google.com">
-            <span class="icon-container">
-              <span class="icon"></span>
-            </span>
-          </a>
-          <ul></ul>
+        <li class="subNav-option">
+          <a href="" class="chosen link">쇼핑하기</a>
         </li>
       </ul>
+
     </nav>
 
     <div class="action-bar">
-      <div class="sort-button">
-        <button>장르</button>
+      <div class="genre-button">
+        <button>
+          <span class="title">장르</span>
+          <span class="button-icon">
+            
+          </span>
+        </button>
       </div>
       <div class="spacer">
         <div class="space-liner"></div>
@@ -109,17 +99,23 @@
         <a href="https://play.google.com">신간</a>
       </div>
 
-      <div class="helps">
-        <button>도움말</button>
-      </div>
-      <div class="settings">
-        <button>세팅</button>
+      <div class="options">
+        <div class="helps">
+          <button>
+            <span class="icon"></span>
+          </button>
+        </div>
+        <div class="settings">
+          <button>
+            <span class="icon"></span>
+          </button>
+        </div>        
       </div>
     </div>    
 
     <section>
       <ul id="categories">
-        <li>
+        <li class="category">
           <div class="category-head">
             <a href="" class="title-link">주간 베스트셀러</a>
             <a href="" class="show-more-button">더보기</a>
@@ -219,7 +215,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="category">
           <div class="category-head">
             <a href="" class="title-link">여름 메가 세일: 책 2탄</a>
             <a href="" class="show-more-button">더보기</a>
@@ -319,7 +315,7 @@
           </div>
         </li>
 
-        <li>
+        <li class="category">
           <div class="category-head">
             <a href="" class="title-link">맞춤 추천</a>
             <a href="" class="show-more-button">더보기</a>
